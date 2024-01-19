@@ -1,0 +1,47 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+label{
+    font-size: 18px;
+    color: gray;
+}
+
+span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+.submitted-values {
+    margin-top: 20px;
+  }
+  
+  .submitted-values h2 {
+    font-size: 20px;
+    color: green; 
+  }
+  
+  .submitted-values p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 5px;
+  }
